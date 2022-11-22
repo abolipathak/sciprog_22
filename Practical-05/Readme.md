@@ -4,7 +4,7 @@ This folder contains Practical 5 :
 
 1) Displays the Fibonacci series upto n
 
-2) Implements a function artanh(x) as an approximation to the Maclaurin series
+2) Implements a function artanh1(x) as an approximation to the Maclaurin series
 
 To compile run the below commands :
 
