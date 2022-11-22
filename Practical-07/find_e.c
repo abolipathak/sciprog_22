@@ -4,7 +4,7 @@
 #include<math.h>
 #include<stdlib.h>
 
-int factorial(int n);
+int fact(int n);
 
 int main(void){
 
@@ -12,7 +12,7 @@ int main(void){
     double e, *a;
 
 //Enter the order of Polynomial 
-    printf("Please enter the required polynomial order\n");
+    printf("Enter the required polynomial order\n");
     if (scanf("%d", &order) !=1){
         printf("Error, no number entered");
         return 1;
@@ -21,7 +21,7 @@ int main(void){
 //Allocate space for a array
     a=malloc(order*sizeof(double));
     for (i=0; i<order; i++){
-        a[i]=1.0/(double)factorial(i+1);
+        a[i]=1.0/(double)fact(i+1);
         printf("Value of e for order %d is %1.14lf\n", order, a[i]);
     }
 
@@ -37,15 +37,15 @@ int main(void){
     return 0;
 }
 
-int factorial(int n){
+int fact(int n){
     if(n<0){
-        printf("Error: Input should be positive value ");
+        printf("Error: Invalid input, enter a positive value ");
         return(-1);
     }
     else if (n==0){
         return 1;
     }
     else{
-        return(n*factorial(n-1));
+        return(n*fact(n-1));
     }
 }
