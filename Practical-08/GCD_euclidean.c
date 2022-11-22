@@ -1,13 +1,22 @@
 /* GCD of two numbers using Euclid's algorithm*/
 #include <stdio.h>
-void main() {
-    int m, n; /* given numbers */
-    printf("Enter-two integer numbers: ");
-    scanf ("%d %d", &m, &n);
-    while (n > 0) {
-        int r = m % n;
-        m = n;
-        n = r;
-    }
-    printf ("GCD = %d \n",m);
+
+int gcd(int a, int b);
+int main() {
+    int a, b;
+    printf("Enter two positive integers: ");
+    scanf("%d %d", &a, &b);
+    printf("G.C.D of %d and %d is %d.", a, b, gcd(a, b));
+    return 0;
+}
+
+
+int gcd(a, b) {
+  int R;
+  while ((a % b) > 0)  {
+    R = a % b;
+    a = b;
+    b = R;
+  }
+  return b;
 }
