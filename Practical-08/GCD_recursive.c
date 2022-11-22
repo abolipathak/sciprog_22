@@ -8,6 +8,7 @@ int main() {
     return 0;
 }
 
+//Recursive function to calculate gcd
 int hcf(int a, int b) {
     if (b != 0)
         return hcf(b, a % b);

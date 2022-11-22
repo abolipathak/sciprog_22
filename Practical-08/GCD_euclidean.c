@@ -10,7 +10,7 @@ int main() {
     return 0;
 }
 
-
+//function that returns the Greatest Common Divisor
 int gcd(a, b) {
   int R;
   while ((a % b) > 0)  {
