@@ -6,8 +6,9 @@ int main()
 {
     int n;
  
-    printf("Enter the nber of disks : ");
+    printf("Enter the number of disks : ");
     scanf("%d", &n);
+    //solving for n discs
     towers(n, '1', '2', '3');
     return 0;
 }

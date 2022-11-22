@@ -2,7 +2,7 @@
 
 This folder contains Practical 9 :
 
-magic_square.c : 
+main.c : 
 main program to check if square matrix is a magic square.
 
 magic_square.h : 

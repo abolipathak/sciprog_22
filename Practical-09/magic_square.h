@@ -9,6 +9,7 @@ int isMagicSquare(int **square, const int n)
   int off_diag_sum = 0;
   int i,j;
   for(i=0;i<n;i++){
+    //diagonal summation
     magic_number += square[i][i];
     off_diag_sum += square[i][n-i-1];
   }
@@ -28,6 +29,7 @@ int isMagicSquare(int **square, const int n)
 
     if(rowsum != magic_number || colsum != magic_number){
       return 0;
+      //return 0 if not a magic square
     }
   }
   // If passed all checks, it is a magic square

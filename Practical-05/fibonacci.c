@@ -3,6 +3,7 @@ int main()
 {    
  int n1=0,n2=1,n3,i,number;    
 
+// User input
  printf("Enter the number of elements:"); 
     
  scanf("%d",&number);   
